@@ -1,7 +1,7 @@
 from django.urls import path
 from .import views
 
-# связываем advertisement_list с корневым адресом '' (запрос 127.0.0.1:8000)
+# связываем функцию advertisement_list из файла views с корневым адресом '' (запрос 127.0.0.1:8000)
 # name - имя url
 urlpatterns = [
     path('', views.advertisement_list, name='advertisement_list'),
@@ -11,4 +11,8 @@ urlpatterns = [
     path('advertisement_pizduk_s_borodoy/', views.advertisement_pizduk_s_borodoy, name='advertisement_pizduk_s_borodoy'),
     path('advertisement_tip/', views.advertisement_tip, name='advertisement_tip'),
     path('advertisement_not_like/', views.advertisement_not_like, name='advertisement_not_like'),
+    path('contacts/', views.contacts, name='contacts'),
+    path('about/', views.about, name='about'),
+    path('categories/', views.categories, name='categories'),
+    path('regions/', views.regions, name='regions'),
 ]
