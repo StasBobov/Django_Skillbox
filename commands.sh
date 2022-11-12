@@ -8,6 +8,8 @@ django-admin startproject todo
 ls
 # перейти в директорию проекта 'todo'
 cd todo/
+# директория запуска сервера
+cd D:\IT\Python\My_projects\Django_Skillbox\Lesson2\board
 
 
 # создаём пользователя

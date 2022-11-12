@@ -1,10 +1,8 @@
 <html>
+    <!-- Создали тэг django с циклом и скрестили его с html тэгами-->
     <ul>
-        <li><a href='/advertisement_snatch'>Спиздил все курсы Skillbox, и ни о чём не жалею!</a></li>
-        <li><a href='/advertisement_Vadim'>Вадим Шандрынов</a></li>
-        <li><a href='/advertisement_pizduk'>Пиздюк в очках</a></li>
-        <li><a href='/advertisement_pizduk_s_borodoy'>Бородатый пиздюк в очках</a></li>
-        <li><a href='/advertisement_tip'>Тип без очков очках</a></li>
-        <li><a href='/advertisement_not_like'>Неприятный тип по HTML</a></li>
-    </ul>
+    {% for advertisement in advertisements %}
+        <li>{{advertisement}}</li>
+    {% endfor %}
+        </ul>
 </html>
